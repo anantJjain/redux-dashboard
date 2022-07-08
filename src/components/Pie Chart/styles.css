@@ -1,0 +1,46 @@
+.QuesPie{
+    border: 1px solid #EBF0F5;
+    border-radius: 10px;
+}
+
+.PieHead{
+
+}
+
+.QuesHead{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #1E272E;
+}
+
+.QuesNumber{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #438AF6;
+}
+
+.QuesDesc{
+
+}
+
+
+.QuesAnalysis{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    color: #566474;
+}
+
+.PieGraph{
+    transform: rotate(-90deg);
+}
+
+.Arrow{
+
+}
+
+.AnswersPie{
+
+}

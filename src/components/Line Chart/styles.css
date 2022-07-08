@@ -1,0 +1,55 @@
+.GraphBox{
+    border: 1px solid #EBF0F5;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.GraphHead{
+    width: 142px;
+    height: 28px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #1E272E;
+}
+
+.GraphData{
+    padding: auto;
+    position: relative;
+    display: flex;
+}
+
+.PercentileShow{     
+    width: 432px;
+    height: 42px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: #566474;
+    text-align: left;
+    position: relative;
+}
+
+.GraphIcon{
+    margin: 10px 80px 0px auto;
+}
+
+.Ellipse{
+    position: absolute;
+}
+
+.Trophy{
+    position: relative;
+    text-align: center;
+    margin: -40px 0px 0px 0px;  
+}
+
+.LinePercentile{
+    width: 694px;
+    height: 307px;
+}

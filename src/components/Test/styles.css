@@ -1,0 +1,47 @@
+.SkillContainer{
+    display: flex;
+    padding: 30px;
+    width: auto;
+    height: auto;
+    border: 1px solid #EBF0F5;
+    border-radius: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+.contentSkill{
+    text-align: left;
+    margin: 0px 0px 0px 20.44px;
+}
+
+.SkillName{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: -0.02em;
+    color: #222F3E;
+}
+
+.SkillDetails{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 180%;
+    letter-spacing: -0.02em;
+    color: #566474;
+}
+
+.ModalToggler{
+    padding: 4px;
+    width: 120px;
+    height: 44px;
+    margin: 0px 0px 0px auto;
+    background: #142683;
+    border-radius: 5px;
+    border-color: #142683;
+    color: #FFFFFF;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}

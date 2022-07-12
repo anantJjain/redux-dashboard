@@ -39,7 +39,7 @@
 .contentSkill{
     text-align: left;
     /* margin: 0px 0px 0px 20.44px; */
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }
 
 .SkillName{
@@ -69,5 +69,5 @@
     border-color: #142683;
     color: #FFFFFF;
     font-weight: 700;
-    border: 2px red solid;
+    /* border: 2px red solid; */
 }

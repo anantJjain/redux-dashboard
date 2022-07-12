@@ -23,7 +23,7 @@ function PieChart(props) {
           }
         </div>
           <div className='AnswerPie'>
-            <img className='Arrow' src={Arrow} alt='Sorry'></img>
+            {/* <img className='Arrow' src={Arrow} alt='Sorry'></img> */}
             <Doughnut 
               className='PieGraph'
               data={{
@@ -37,7 +37,8 @@ function PieChart(props) {
                                 }],
                           }}
               options={{ 
-                          cutout:120,
+                         
+                          // cutout:400,
                           rotation:90,
                           radius:150,         
                         }}

@@ -1,6 +1,6 @@
 .QuesPie{
-    /* border: 1px solid #EBF0F5; */
-    border: 1px solid red;
+    border: 1px solid #EBF0F5;
+    /* border: 1px solid red; */
     border-radius: 10px;
     padding: 20px;
 }
@@ -25,7 +25,8 @@
 }
 
 .QuesDesc{
-
+    /* border: 2px red solid; */
+    margin-top: 20px;
 }
 
 
@@ -34,16 +35,24 @@
     font-style: normal;
     font-weight: 700;
     color: #566474;
+    /* border: 2px red solid; */
+
 }
 
 .PieGraph{
     transform: rotate(-90deg);
+    /* border: 10px blue solid; */
 }
 
 .Arrow{
-
+    position: absolute;
+    margin-top:35%;
+    margin-left: 40%;
+    /* margin: auto; */
 }
 
 .AnswersPie{
+    position: relative;
+    /* border: 10px blue solid; */
 
 }

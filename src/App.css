@@ -1,6 +1,6 @@
 .Grid{
     display: grid;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 @media screen and (min-width:320px) {

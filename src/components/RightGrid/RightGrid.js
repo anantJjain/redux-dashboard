@@ -6,8 +6,8 @@ import '../RightGrid/styles.css'
 function RightGrid() {
   return (
     <div className='containerRight'>
-        <SyllabAnalysis />
-        <PieChart />
+      <div><SyllabAnalysis /></div>
+      <div><PieChart /></div>
     </div>
   )
 }

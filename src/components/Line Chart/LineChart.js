@@ -13,7 +13,7 @@ function LineChart(props) {
       <div className='GraphBox'>
         <h1 className='GraphHead'>Comparison Graph</h1>
         <p className='GraphData'>
-          <div style={{border:'2px red solid'}}>
+          <div>
           { 
             props.percentile<72?<p className='PercentileShow'>You scored {props.percentile}% percentile which is lower than 72% which is the average percentile of all  those who took this test</p>:<p className='PercentileShow'>You scored {props.percentile}% percentile which is higher than 72% which is the average percentile of all those who took this test</p>
           }

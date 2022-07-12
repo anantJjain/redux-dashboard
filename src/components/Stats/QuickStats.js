@@ -4,7 +4,7 @@ import Ellipse from '../../assets/Ellipse125.png'
 import score1 from '../../assets/score1.png'
 import trophy from '../../assets/trophy.png'
 import score from '../../assets/score.png'
-import '../Stats/styles.css'
+import './styles.css'
 
 function QuickStats(props) {
   return (
@@ -25,11 +25,11 @@ function QuickStats(props) {
             </div>
             <div className='rank'>
               <span className='rankNum'>{props.rank}</span>
-              <span className='rankName'>YOUR RANK</span>  
+              <span className='rankName'>RANK</span>  
             </div>
           </div>
       
-          {/* <div className='Line'></div> */}
+          <div className='Line'></div>
 
           <div className='percentileContent'>
             <div className='percentileIcon'>
@@ -46,7 +46,7 @@ function QuickStats(props) {
             </div>
           </div>
 
-          {/* <div className='Line'></div> */}
+          <div className='Line'></div>
 
           <div className='scoreContent'>
             <div className='scoreIcon'>

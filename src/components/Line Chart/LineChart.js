@@ -13,13 +13,15 @@ function LineChart(props) {
       <div className='GraphBox'>
         <h1 className='GraphHead'>Comparison Graph</h1>
         <p className='GraphData'>
+          <div style={{border:'2px red solid'}}>
           { 
             props.percentile<72?<p className='PercentileShow'>You scored {props.percentile}% percentile which is lower than 72% which is the average percentile of all  those who took this test</p>:<p className='PercentileShow'>You scored {props.percentile}% percentile which is higher than 72% which is the average percentile of all those who took this test</p>
-          } 
+          }
+          </div> 
           <div className='GraphIcon'>
-            <div className='Ellipse'>
+            <div className='Ellipse1'>
               <img src={Ellipse} alt='Sorry'></img>
-              <div className='Trophy'>
+              <div className='Trophy1'>
                 <img src={graph} alt='Sorry'></img>
               </div>
             </div>
@@ -49,7 +51,7 @@ function LineChart(props) {
                           titleFont:{weight:'700',family:'DM Sans',size:18},
                           titleColor:'#FFFFFF',
                           cornerRadius:5,
-                          caretPadding:25,
+                          caretPadding:5,
                           caretSize:10,
                           // yAlign:100
                           // border-radius: 5px,

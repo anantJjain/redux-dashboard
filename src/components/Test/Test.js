@@ -17,7 +17,7 @@ const openModal = () =>{
     <div>
         { props.isModalOpen ? <Modal /> : <>
                                             <div className='SkillContainer'>
-                                                <div className='icon'>
+                                                <div style={{border:'2px red solid'}} className='icon'>
                                                 <img src={skill} alt='Sorry'></img>
                                                 </div>
                                                 <div className='contentSkill'>

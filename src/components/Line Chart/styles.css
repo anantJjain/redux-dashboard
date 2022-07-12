@@ -1,6 +1,7 @@
 .GraphBox{
-    border: 1px solid #EBF0F5;
-    padding: 30px;
+    /* border: 1px solid #EBF0F5; */
+    border: 1px solid red;
+    padding: 20px;
     border-radius: 10px;
 }
 
@@ -14,17 +15,49 @@
     line-height: 28px;
     letter-spacing: -0.02em;
     color: #1E272E;
+    border: 1px solid red;
+}
+
+@media screen and (min-width:320px) and (max-width:424px) {
+    .GraphHead{
+        width: 100%;
+        text-align: center;
+    }
+    .GraphIcon{
+        display: none;
+    }
+
+    .GraphData{
+        display: grid;
+        grid-template-columns: auto;
+    }
+}
+
+@media screen and (min-width:425px) and (max-width:768px) {
+    .GraphHead{
+        width: 100%;
+        text-align:left;
+    }
+    .GraphIcon{
+        display: none;
+    }
+
+    .GraphData{
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 .GraphData{
     padding: auto;
     position: relative;
-    display: flex;
+    display: grid;
+    grid-template-columns: 95% 5%;
+    justify-content: space-between;
+    border: 1px solid red;
 }
 
 .PercentileShow{     
-    width: 432px;
-    height: 42px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -33,23 +66,26 @@
     color: #566474;
     text-align: left;
     position: relative;
+    border: 1px solid red;
 }
 
 .GraphIcon{
-    margin: 10px 80px 0px auto;
+    /* margin: 10px 80px 0px auto; */
+    justify-content: end;
 }
 
-.Ellipse{
+.Ellipse1{
     position: absolute;
 }
 
-.Trophy{
+.Trophy1{
     position: relative;
     text-align: center;
-    margin: -40px 0px 0px 0px;  
+    margin: -40px -10px 0px -10px;  
 }
 
 .LinePercentile{
-    width: 694px;
-    height: 307px;
+    width: 20%;
+    height: 20%;
+    border: 1px solid red;
 }

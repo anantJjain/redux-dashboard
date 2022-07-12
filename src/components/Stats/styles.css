@@ -1,13 +1,11 @@
 .QuickStats{
     border: 1px solid black;
+    padding: 20px;
 }
-
 
 .scoreContent { grid-area : score ;}
 .percentileContent { grid-area : percentile ;}
 .rankContent { grid-area : rank ;}
-
-
 
 .QuickStatsHeading{
     width: 20%;
@@ -19,30 +17,30 @@
     border: 1px solid black;
 }
 
-
 .QuickStatsContent{
     display: grid;
-    /* grid-template-columns: auto auto auto; */
-    grid-template-areas:
-    'rank percentile score' ;
-    /* 'menu main main main right right'
-    'menu footer footer footer footer footer'; */
+    grid-template-areas:'rank percentile score' ;
     margin: 20px 0px;
     border: 1px solid black;
 }
 
 @media screen and (min-width:320px) {
     .QuickStatsContent{
-        grid-template-areas:'rank rank rank' 'percentile percentile percentile' 'score score score' ;
+        grid-template-areas:'rank rank percentile' 'score score score' ;
     }
     .QuickStatsHeading{
         width: 100%;
+        text-align: center;
     }
 }
 
 @media screen and (min-width:425px) {
     .QuickStatsContent{
-        grid-template-areas:'rank rank percentile' 'score score score' ;
+        grid-template-areas:'rank rank' 'percentile percentile' 'score score score' ;
+    }
+    
+    .QuickStatsHeading{
+        text-align: left;
     }
 }
 
@@ -52,10 +50,9 @@
     }
 }
 
-.rankContent{
+.rankContent , .percentileContent , .scoreContent{
     display: flex;
     flex-direction:row;
-    /* text-align:left; */
     justify-content: center;
     padding: 10px;
     border: 1px solid black;
@@ -71,125 +68,28 @@
     margin: -40px 0px 0px 0px;  
 }
 
-.rank{
+.rankIcon , .percentileIcon , .scoreIcon{
+    margin: 0px 55px 0px 0px;
+}
+
+.rank , .percentile, .score{
     height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 0px 60px;
 }
 
-.percentileContent{
-    display: flex;
-    flex-direction:row;
-    /* text-align:left; */
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-.percentile{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 60px;
-}
-
-.scoreContent{
-    display: flex;
-    flex-direction:row;
-    /* text-align:left; */
-    justify-content: center;
-    padding: 10px;
-    border: 1px solid black;
-}
-
-.score{
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 60px;
-}
-
-.Line{
-    width: 0.01%;
-    height: auto;
-    border-radius: 10px;
-}
-
-.rankNum{
-    width: auto;
-    height: auto;
+.rankNum , .PercentileNum , .ScoreNum{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 22px;
-    line-height: 29px;
-    letter-spacing: -0.02em;
     color: #1E272E;
 }
 
-.PercentileNum{ 
-    width: auto;
-    height: auto;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 29px;
-    letter-spacing: -0.02em;
-    color: #1E272E;
-}
-
-.ScoreNum{
-    width: 64px;
-    height: 29px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 29px;
-    letter-spacing: -0.02em;
-    color: #1E272E;
-}
-
-.rankName{
-    width: 63px;
-    height: 16px;
-    top: 80px;
+.rankName , .PercentileName , .ScoreName{
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 16px;
-    letter-spacing: -0.02em;
     color: #9EAAB7;
-    margin-top: 5px;
-}
-
-.PercentileName{
-    width: 65px;
-    height: 16px;
-    top: 80px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    color: #9EAAB7;
-    margin-top: 5px;
-}
-
-.ScoreName{
-    width: 110px;
-    height: 16px;
-    top: 80px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: -0.02em;
-    color: #9EAAB7;
-    margin-top: 5px;
 }

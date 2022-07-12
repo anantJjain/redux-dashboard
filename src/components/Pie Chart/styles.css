@@ -1,10 +1,13 @@
 .QuesPie{
-    border: 1px solid #EBF0F5;
+    /* border: 1px solid #EBF0F5; */
+    border: 1px solid red;
     border-radius: 10px;
+    padding: 20px;
 }
 
 .PieHead{
-
+    display: flex;
+    justify-content: space-between;
 }
 
 .QuesHead{

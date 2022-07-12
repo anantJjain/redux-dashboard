@@ -1,14 +1,14 @@
-@media screen and (min-width:320px) and (max-width:800px) {
+/* @media screen and (min-width:320px) and (max-width:800px) {
     .Sidebar{
         display: none;
     }
-}
+} */
 
 
 .Sidebar{
     display: flex;
     flex-direction: column;
-    border-right: 2px #EBF0F5 solid;
+    /* border-right: 2px #EBF0F5 solid; */
 }
 
 

@@ -1,11 +1,7 @@
 .SyllabAnalysis{
     border: 1px solid #EBF0F5;
-    height: auto;
-    /* width: 25%; */
     border-radius: 10px;
-    padding: 30px 30px 30px 30px;
-    /* margin-top: 75px; */
-    /* margin-left: 70.5%; */
+    padding: 20px;
 }
 
 .testTags{
@@ -14,24 +10,8 @@
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 21px;
-    letter-spacing: -0.02em;
     color: #566474;
     width: 70%;
-}
-
-.Topics{
-    margin-bottom: 4px;
-}
-
-.percentage{
-    margin: 0px 0px 0px 94px;
-    font-family: 'DM Sans';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
 }
 
 div.SyllabAnalysis div:nth-child(2){
@@ -51,13 +31,11 @@ div.SyllabAnalysis div:nth-child(5){
 }
 
 .Syllabheader{
-    width: 166px;
-    height: 28px;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 28px;
-    letter-spacing: -0.02em;
     color: #1E272E;
+    border:2px red solid
 }
+

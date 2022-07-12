@@ -2,10 +2,12 @@ import React from 'react';
 import {Route, Routes} from 'react-router-dom'
 import Navbar from './components/Navbar/Navbar';
 import Sidebar from './components/Sidebar/Sidebar';
-import CenterGrid from './components/CenterGrid/CenterGrid'
-import RightGrid from './components/RightGrid/RightGrid'
+
 import Dashboard from './components/Dashboard/Dashboard'
+import MainContainer from './components/MainContainer/MainContainer'
 import Internships from './components/Internships/Internships'
+
+import './App.css'
 
 
 function App() {
@@ -13,12 +15,16 @@ function App() {
     <div>
       <Navbar />
       <div className='Grid'>
-        <Sidebar />
+        <div className='SidebarContainer'>
+          <Sidebar />
+        </div>
+        <div className='MainContainer'>
         <Routes>
           <Route path='Dashboard'   element={<Dashboard />} />
-          <Route path='/'           element={<><CenterGrid /><RightGrid /></>} />
+          <Route path='/'           element={<MainContainer />} />
           <Route path='Internships' element={<Internships />} />
         </Routes>
+        </div>
       </div>     
     </div>
 

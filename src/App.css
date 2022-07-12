@@ -1,4 +1,27 @@
 .Grid{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 12% 58% 30%;
+}
+
+@media screen and (min-width:320px) {
+    .Grid{
+        grid-template-columns: 100%;
+    }
+}
+
+@media screen and (min-width:800px) {
+    .Grid{
+        grid-template-columns: 20% 80%;
+        /* display: block; */
+    }
+    .RightCont{
+        /* display: block; */
+        float: right;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .Grid{
+        grid-template-columns: 15% 55% 30%;
+    }
 }

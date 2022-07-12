@@ -12,7 +12,9 @@ function App() {
       <div className='Grid'>
         <Sidebar />
         <CenterGrid />
-        <RightGrid /> 
+        <div className='RightCont'> 
+          <RightGrid /> 
+        </div>
       </div>     
     </div>
   );

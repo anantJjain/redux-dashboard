@@ -1,3 +1,12 @@
-.container{
+.containerRight{
     border: 2px red solid;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: auto;
+}
+
+@media screen and (min-width:768px) and (max-width:1400px){
+    .containerRight{
+        grid-template-columns: 50% 50%;
+    }
 }

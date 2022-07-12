@@ -27,7 +27,7 @@ function QuickStats(props) {
             </div>
           </div>
       
-          <div className='Line'></div>
+          {/* <div className='Line'></div>
 
           <div className='percentileContent'>
             <div className='percentileIcon'>
@@ -59,7 +59,7 @@ function QuickStats(props) {
               <span className='ScoreNum'>{props.currentscore}/15</span>  
               <span className='ScoreName'>CORRECT ANSWERS</span>  
             </div>
-          </div>          
+          </div>           */}
         </div>
       </div>
     </div>

@@ -1,30 +1,24 @@
-/* @media screen and (min-width:320px) and (max-width:800px) {
-    .Sidebar{
-        display: none;
-    }
-} */
-
-
 .Sidebar{
     display: flex;
     flex-direction: column;
-    /* border-right: 2px #EBF0F5 solid; */
+    margin-right: 30px;
+    padding-right: 20px;
+    border-right: 1px solid #EBF0F5;
+    height: 100%;
 }
-
-
 
 .sideDashboard{
     position: relative;
-    margin: 0px 0px 0px 20px; 
+    /* margin: 0px 0px 0px 20px;  */
     font-family: 'DM Sans';
     font-style: normal;
     line-height: 28px;
     letter-spacing: -0.02em;
-    padding:20px 0px 20px 30px;
+    padding:10px 0px 10px 10px;
 }
 
 .Navlink1{
-    margin-top: 44px;
+    margin-top: 50px;
 }
 
 .Navlink2{
@@ -44,14 +38,26 @@
     margin: 0px 0px 0px 21px;
 }
 
+@media screen and (min-width:1024px)  and (max-width:1400px) {
+    .dash{
+        margin: 0px 0px 0px 15px;
+        font-size: 0.9em;
+    }
+    .intern{
+        margin: 0px 0px 0px 21px;
+        font-size: 0.8em;
+    }
+}
+
+
 .sideSkill{
     position: relative;
-    margin: 0px 0px 0px 20px; 
+    /* margin: 0px 0px 0px 20px;  */
     font-family: 'DM Sans';
     font-style: normal;
     line-height: 28px;
     letter-spacing: -0.02em;
-    padding:20px 0px 20px 30px;
+    padding:10px 0px 10px 10px;
 }
 
 .SkillIcon{
@@ -76,12 +82,12 @@
 
 .sideInternships{
     position: relative;
-    margin: 0px 0px 0px 20px; 
+    /* margin: 0px 0px 0px 20px;  */
     font-family: 'DM Sans';
     font-style: normal;
     line-height: 28px;
     letter-spacing: -0.02em;
-    padding:20px 0px 20px 30px;
+    padding:10px 0px 10px 20px;
 }
 
 .internIcon{

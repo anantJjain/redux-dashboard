@@ -2,8 +2,20 @@
     border: 1px solid #EBF0F5;
     border-radius: 10px;
     padding: 20px;
+    margin-top: 30px;
 }
 
+@media screen and (min-width:768px) and (max-width:1400px) {
+    .SyllabAnalysis{
+        margin-right: 20px;
+    }
+}
+
+@media screen and (min-width:1400px) {
+    .SyllabAnalysis{
+        margin-top: 60px;
+    }
+}
 .testTags{
     text-align: left;
     font-family: 'DM Sans';

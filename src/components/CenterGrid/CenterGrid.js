@@ -6,7 +6,7 @@ import '../CenterGrid/styles.css'
 
 function CenterGrid() {
   return (
-    <div className='container'>
+    <div className='centerContainer'>
         <Test />
         <QuickStats />
         <LineChart />

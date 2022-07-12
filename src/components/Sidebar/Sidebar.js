@@ -22,7 +22,6 @@ function Sidebar() {
             borderRadius: isActive ? '0px 100px 100px 0px': '0px',
             color: isActive ? '#445EE2' : '#545e6f',
             fontWeight:isActive ? 900 : 500,
-            fontSize:isActive ? '1.2em' :'16px',
             background: isActive ? '#F7F8FA' : '#FFFFFF',
           })} 
         >

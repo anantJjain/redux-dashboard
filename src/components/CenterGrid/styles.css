@@ -1,3 +1,9 @@
-.container{
-    /* border: 2px blue solid; */
+.centerContainer{
+    /* border: 1px blue solid; */
+}
+
+@media screen and (min-width:1400px) {
+    .centerContainer{
+        margin-right: 30px;
+    }    
 }

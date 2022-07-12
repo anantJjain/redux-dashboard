@@ -1,4 +1,9 @@
-.container{
-    /* border: 2px red solid; */
-    /* overflow: hidden; */
+.NavContainer{
+    overflow: hidden;
+}
+
+@media screen and (min-width:800px) {
+    .NavContainer{
+        display: none;
+    }
 }

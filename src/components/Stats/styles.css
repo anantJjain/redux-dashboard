@@ -1,6 +1,14 @@
 .QuickStats{
-    /* border: 1px solid black; */
+    border: 1px solid #EBF0F5;
+    border-radius: 10px;
     padding: 20px;
+    margin-top: 30px;
+}
+
+@media screen and (min-width:1400px) {
+    .QuickStats{
+        margin-top: 91px;
+    }
 }
 
 .scoreContent { grid-area : score ;}
@@ -14,14 +22,12 @@
     font-style: normal;
     font-weight: 700;
     color: #1E272E;
-    /* border: 1px solid black; */
 }
 
 .QuickStatsContent{
     display: grid;
     grid-template-areas:'rank percentile score' ;
     margin: 20px 0px;
-    /* border: 1px solid black; */
 }
 
 @media screen and (min-width:320px) {
@@ -55,7 +61,6 @@
     flex-direction:row;
     justify-content: center;
     padding: 10px;
-    /* border: 1px solid black; */
 }
 
 .Ellipse{

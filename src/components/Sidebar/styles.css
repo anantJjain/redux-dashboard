@@ -1,10 +1,99 @@
-.Sidebar{
-    border: 2px red solid;
-    overflow: hidden;
-}
-
 @media screen and (min-width:320px) and (max-width:800px) {
     .Sidebar{
         display: none;
     }
+}
+
+
+.Sidebar{
+    display: flex;
+    flex-direction: column;
+    border-right: 2px #EBF0F5 solid;
+}
+
+
+
+.sideDashboard{
+    position: relative;
+    margin: 0px 0px 0px 20px; 
+    font-family: 'DM Sans';
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding:20px 0px 20px 30px;
+}
+
+.Navlink1{
+    margin-top: 44px;
+}
+
+.Navlink2{
+    margin-top: 10px;
+}
+
+.DashboardIcon{
+    position: absolute;
+    margin: -1px 0px 0px -5px;
+}
+
+.line{
+    margin: 0px 0px 0px 3px;
+}
+
+.dash{
+    margin: 0px 0px 0px 21px;
+}
+
+.sideSkill{
+    position: relative;
+    margin: 0px 0px 0px 20px; 
+    font-family: 'DM Sans';
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding:20px 0px 20px 30px;
+}
+
+.SkillIcon{
+    position: absolute;
+    margin: 0px 0px 0px 30px;
+}
+
+.Badge{
+    position: relative;
+    margin: -23px 0px 0px 0px;
+}
+
+.SkillIcon1{
+    position: absolute;
+    margin: -5px 0px 0px -2px;
+}
+
+.Badge1{
+    position: relative;
+    margin: -21.5px 0px 0px 0.5px;
+}
+
+.sideInternships{
+    position: relative;
+    margin: 0px 0px 0px 20px; 
+    font-family: 'DM Sans';
+    font-style: normal;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    padding:20px 0px 20px 30px;
+}
+
+.internIcon{
+    position: absolute;
+    margin: 0px 0px 0px -40px;
+}
+
+.internIcon2{
+    position: relative;
+    margin: -35px 0px 0px 5px;
+}
+
+.intern{
+    margin: 0px 0px 0px 20px;
 }

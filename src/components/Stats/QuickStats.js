@@ -11,7 +11,9 @@ function QuickStats(props) {
     <div>
         <div className='QuickStats' >
         <div className='QuickStatsHeading'>Quick Statistics</div>
+        
         <div className='QuickStatsContent'>
+          
           <div className='rankContent'>
             <div className='rankIcon'>
               <div className='Ellipse'>
@@ -27,7 +29,7 @@ function QuickStats(props) {
             </div>
           </div>
       
-          {/* <div className='Line'></div>
+          {/* <div className='Line'></div> */}
 
           <div className='percentileContent'>
             <div className='percentileIcon'>
@@ -44,7 +46,7 @@ function QuickStats(props) {
             </div>
           </div>
 
-          <div className='Line'></div>
+          {/* <div className='Line'></div> */}
 
           <div className='scoreContent'>
             <div className='scoreIcon'>
@@ -59,8 +61,10 @@ function QuickStats(props) {
               <span className='ScoreNum'>{props.currentscore}/15</span>  
               <span className='ScoreName'>CORRECT ANSWERS</span>  
             </div>
-          </div>           */}
+          </div>          
+        
         </div>
+      
       </div>
     </div>
   )

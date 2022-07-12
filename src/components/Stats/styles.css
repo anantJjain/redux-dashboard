@@ -1,9 +1,13 @@
 .QuickStats{
-    /* padding: 30px; */
-    /* border-radius: 10px; */
-    /* border: 1px solid #EBF0F5; */
     border: 1px solid black;
 }
+
+
+.scoreContent { grid-area : score ;}
+.percentileContent { grid-area : percentile ;}
+.rankContent { grid-area : rank ;}
+
+
 
 .QuickStatsHeading{
     width: 20%;
@@ -15,17 +19,44 @@
     border: 1px solid black;
 }
 
+
 .QuickStatsContent{
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    /* grid-template-columns: auto auto auto; */
+    grid-template-areas:
+    'rank percentile score' ;
+    /* 'menu main main main right right'
+    'menu footer footer footer footer footer'; */
     margin: 20px 0px;
     border: 1px solid black;
+}
+
+@media screen and (min-width:320px) {
+    .QuickStatsContent{
+        grid-template-areas:'rank rank rank' 'percentile percentile percentile' 'score score score' ;
+    }
+    .QuickStatsHeading{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:425px) {
+    .QuickStatsContent{
+        grid-template-areas:'rank rank percentile' 'score score score' ;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .QuickStatsContent{
+        grid-template-areas:'rank percentile score' ;
+    }
 }
 
 .rankContent{
     display: flex;
     flex-direction:row;
-    text-align:left;
+    /* text-align:left; */
+    justify-content: center;
     padding: 10px;
     border: 1px solid black;
 }
@@ -50,7 +81,8 @@
 .percentileContent{
     display: flex;
     flex-direction:row;
-    text-align:left;
+    /* text-align:left; */
+    justify-content: center;
     padding: 10px;
     border: 1px solid black;
 }
@@ -65,7 +97,8 @@
 .scoreContent{
     display: flex;
     flex-direction:row;
-    text-align:left;
+    /* text-align:left; */
+    justify-content: center;
     padding: 10px;
     border: 1px solid black;
 }

@@ -8,7 +8,7 @@ import '../Test/styles.css'
 
 function Test(props) {
 
-const openModal = () =>{
+const openModal = () => {
         console.log(props)
         props.openModal(props,props.isModalOpen)
 }
@@ -34,6 +34,7 @@ const openModal = () =>{
     </div>
   )
 }
+
 
 const mapStatetoProps = (state) =>{
     return {

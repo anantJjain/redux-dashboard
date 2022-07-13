@@ -7,12 +7,16 @@ import Dashboard from './components/Dashboard/Dashboard'
 import MainContainer from './components/MainContainer/MainContainer'
 import Internships from './components/Internships/Internships'
 
+import { connect } from 'react-redux';
+
 import './App.css'
+import Modal from './components/Modal/Modal';
 
 
-function App() {
+function App(props) {
   return (
     <div>
+      {props.isModalOpen ?<div style={{height:'100vh',borderRadius:'10px',backgroundColor:'rgba(67,138,246,0.5)'}}> <Modal /> </div>:<>
       <Navbar />
       <div className='Grid'>
         <div className='SidebarContainer'>
@@ -26,11 +30,18 @@ function App() {
         </Routes>
         </div>
       </div>     
-    </div>
-
-
+    </>
+      
+      }
+</div>
   );
 }
 
-export default App;
+const mapStatetoProps = (state) =>{
+  return{
+    isModalOpen:state.isModalOpen
+  }
+}
+
+export default connect(mapStatetoProps)(App);
 

@@ -41,22 +41,23 @@ function Modal(props) {
       }    
 
   return (
-    <div style={{border:'2px red solid'}}>
+    <div>
       <section className="modal-main">
-        <div className='ModalHead'>Update Scores
+        <div className='ModalHead'>
+          <div>Update Scores</div>
           <img className='logo' src={logo} alt='Sorry'></img>
         </div>
         <div className='HoriLine'></div>
         <div className='setContent'>
           <div className='Update'>
-            <div className='Ellipse'>
+            <div className='Ellipse1'>
               <img src={Ellipse} alt='Sorry'></img>
               <div className='number'>
                 <img src={b1} alt='Sorry'></img>
               </div>
             </div>
             <div className='updateTitle'>Update your <b>rank</b></div>
-            <div className='buttons1'> 
+            <div className='buttons'> 
               <button  className='btn'onClick={increaseRank1}>+</button>
               <div className='input'>{props.rank}</div>
               <button  className='btn'onClick={decreaseRank1}>-</button>
@@ -64,7 +65,7 @@ function Modal(props) {
           </div>
 
           <div className='Update'>
-            <div className='Ellipse'>
+            <div className='Ellipse1'>
               <img src={Ellipse} alt='Sorry'></img>
                 <div className='number'>
                   <img src={b2} alt='Sorry'></img>
@@ -79,13 +80,13 @@ function Modal(props) {
           </div>
           
           <div className='Update'>
-            <div className='Ellipse'>
+            <div className='Ellipse1'>
               <img src={Ellipse} alt='Sorry'></img>
               <div className='number'>
                 <img src={b3} alt='Sorry'></img>
               </div>
             </div>
-            <div className='updateTitle'>Update your <b>current score (out of 15)</b></div>
+            <div className='updateTitle'>Update your <b>score</b></div>
             <div className='buttons'>
               <button className='btn' onClick={increaseScore1}>+</button>
               <div className='input'>{props.score}</div>
@@ -94,8 +95,12 @@ function Modal(props) {
           </div>
           
         <div className='HoriLine'></div>
-          <button className='buttonSave' onClick={closeModal}>Close Modal<img src={arrow} className='arrow' alt='Sorry'></img></button>
-          <button className='buttonSave' onClick={closeModal}>Save Modal<img src={arrow} className='arrow' alt='Sorry'></img></button>
+        
+        <div className='handles'>
+          <button className='buttonSave' onClick={closeModal}>Close</button>
+          <button className='buttonSave' onClick={closeModal}>Save<img src={arrow} className='arrow' alt='Sorry'></img></button>
+        </div>
+          
       </section>
         
     </div>

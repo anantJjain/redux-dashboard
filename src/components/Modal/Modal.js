@@ -17,7 +17,7 @@ import arrow from '../../assets/saveArrow.png'
 
 function Modal(props) {
     
-    const closeModal = () => {
+      const closeModal = () => {
         props.closeModal(props,props.isModalOpen)
       }
 

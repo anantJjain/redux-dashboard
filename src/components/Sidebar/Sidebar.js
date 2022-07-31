@@ -14,7 +14,8 @@ function Sidebar() {
   return (
     <div className='Sidebar'>
       
-        <NavLink 
+        <NavLink
+          data-aos="fade-left" 
           to={'/Dashboard'}
           className='Navlink1'
           style={({ isActive }) => ({
@@ -36,6 +37,8 @@ function Sidebar() {
         </NavLink>
     
         <NavLink 
+          data-aos="fade-left"
+          data-aos-delay="500"
           to={'/'} 
           className='Navlink2'
           style={({ isActive }) => ({
@@ -59,6 +62,8 @@ function Sidebar() {
         </NavLink>
     
         <NavLink 
+          data-aos="fade-left"
+          data-aos-delay="900"
           to={'/Internships'}
           className='Navlink2'
           style={({ isActive }) => ({

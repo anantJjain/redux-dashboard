@@ -1,4 +1,6 @@
-import React from 'react'
+import React,{useEffect} from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
 import { connect } from 'react-redux'
 import { ModalClose } from '../../actions/stateChange'
 import { increaseRank } from '../../actions/stateChange'
@@ -15,8 +17,13 @@ import b3 from '../../assets/3.png'
 import logo from '../../assets/image4.png'
 import arrow from '../../assets/saveArrow.png'
 
+
 function Modal(props) {
-    
+      useEffect(()=>{
+        Aos.init({duration:1000});
+        Aos.refresh()
+      },[])
+
       const closeModal = () => {
         props.closeModal(props,props.isModalOpen)
       }
@@ -44,11 +51,11 @@ function Modal(props) {
     <div>
       <section className="modal-main">
         <div className='ModalHead'>
-          <div>Update Scores</div>
-          <img className='logo' src={logo} alt='Sorry'></img>
+          <div data-aos="fade-up">Update Scores</div>
+          <img data-aos="fade-down" className='logo' src={logo} alt='Sorry'></img>
         </div>
         <div className='HoriLine'></div>
-        <div className='setContent'>
+        <div data-aos="fade-right" className='setContent'>
           <div className='Update'>
             <div className='Ellipse1'>
               <img src={Ellipse} alt='Sorry'></img>

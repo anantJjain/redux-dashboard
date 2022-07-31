@@ -1,5 +1,9 @@
 .NavContainer{
     overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+    background-color: #142683;
+    /* border: 2px red solid; */
 }
 
 @media screen and (min-width:800px) {

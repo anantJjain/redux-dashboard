@@ -15,7 +15,7 @@ function RightGrid() {
   return (
     <div className='containerRight'>
       <div data-aos="fade-up"><SyllabAnalysis /></div>
-      <div data-aos="fade-up"><PieChart /></div>
+      <div data-aos="fade-up" data-aos-delay="500"><PieChart /></div>
     </div>
   )
 }

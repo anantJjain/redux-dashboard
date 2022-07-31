@@ -15,8 +15,8 @@ function CenterGrid() {
   return (
     <div className='centerContainer'>
         <div data-aos="fade-right"><Test /></div>
-        <div data-aos="fade-left"><QuickStats /></div>
-        <div data-aos="fade-right"><LineChart /></div>
+        <div data-aos="fade-left" data-aos-delay="500"><QuickStats /></div>
+        <div data-aos="fade-right" data-aos-delay="900"><LineChart /></div>
     </div>
   )
 }

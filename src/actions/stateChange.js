@@ -29,3 +29,7 @@ export const increaseScore = (state,score) =>{
 export const decreaseScore = (state,score) =>{
     return { type:'DECREASE_SCORE',score:state.score-1 }
 }
+
+export const NavbarOpen = (state,navbarState) => {
+    return { type:'TOGGLE_NAVBAR',navbarState:state.isNavbarOpen}
+}

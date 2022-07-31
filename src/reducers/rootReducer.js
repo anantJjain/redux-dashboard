@@ -3,6 +3,7 @@ const initState = {
     rank:1,
     percentile:100,
     score:15,
+    isNavbarOpen : false
 }
 
 const rootReducer = (state=initState,action) =>{
@@ -62,6 +63,15 @@ if(action.type==='DECREASE_SCORE' && state.score>0){
         score:newScore
     }
 }
+
+if(action.type==='TOGGLE_NAVBAR'){
+    let newState = !(state.isNavbarOpen)
+    return{
+        ...state,
+        isNavbarOpen :newState
+    }   
+}
+
   return state  
 }
 

@@ -3,6 +3,25 @@
     overflow: hidden;
 }
 
+.NavbarSlider{
+    display: none;
+    background-color: #142683;
+    padding-bottom: 20px;
+}
+
+.Open{
+    /* border: 2px blue solid; */
+    text-align: center;
+    font-size: 1.2em;
+    display: flex;
+    flex-direction: column;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Close{
+    display: none;
+}
+
 @media screen and (min-width:320px) {
     .SidebarContainer{
         display: none;
@@ -18,5 +37,11 @@
     }
     .Grid{
         grid-template-columns: 15% 85%;
+    }
+}
+
+@media screen and (min-width:320px)  and (max-width:800px) {
+    .NavbarSlider{
+        display: block;
     }
 }
